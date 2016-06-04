@@ -1,65 +1,58 @@
+---
+layout: default
+---
 
-<!-- Post Layout Start -->
+<div class="post-title">
+    <h1>{{ page.title }}</h1>
+    {% include post-header.html %}
+</div>
+            
+  {{ content }}
+    
+<div class="share-btns">
+  {% include share-btns.html %}
+</div>   
 
-<!DOCTYPE html>
-<html lang="{{ site.lang }}">
+<div class="comments">
+  {% include disqus.html%}
+</div> 
 
-  {% include head.html %}
+<div class="post-footer">
+  {% include post-footer.html %}
+</div>
+<hr/>
 
-  <body>
-
-    {% include navigation.html %}
-
-    <section id="post" class="container content-section text-center">
-      <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-
-          {% include swipe-instructions.html %}
-
-          <h1><strong>{{ page.title }}</strong></h1>
-          <h4>
-            <strong>{{ page.date | date_to_string }}</strong>
-            <small>
-              . category:
-              <a class="category" href="{{site.baseurl}}/categories/{{page.category | downcase}}.html">
-                {{ page.category }}
-              </a>.
-              <a href="{{site.baseurl}}{{page.url }}#disqus_thread">Comments</a>
-              <br />
-              {% for tag in page.tags %}
-                <a class="tag" href="{{site.baseurl}}/tags/{{tag}}.html">#{{ tag }}</a>
-              {% endfor %}
-            </small>
-          </h4>
-
-          {{ page.content | markdownify }}
-
-          {% include share.html %}
-
-          {% if jekyll.environment == "production" %}
-            {% include comments.html %}
-          {% endif %}
-
-
-          <hr />
-
-          {% if site.author_blurb %}
-          <div class="author row">
-            <img class="col-xs-4 col-sm-3 col-md-2" src="{{site.baseurl}}{{site.author_blurb_image}}" alt="Me" />
-            <p class="col-xs-8 col-sm-9 col-md-10">
-              {{ site.author_blurb }}
-            </p>
-          </div>
-          {% endif%}
+{% if site.data.theme.show_post_navs %}
+  {% if page.previous or page.next %}
+    <div class="post-navs row">
+      {% if page.previous %}
+        <div class="col-md-6 post-nav">
+            
+          <h3 class="section-header">
+            Older
+            <span class="text-muted"> &middot; </span>
+            <a href="{{ "/archive" | prepend:site.baseurl }}">View Archive ({{ site.posts.size }})</a>
+          </h3>
+            
+          <h2 class="post-title-link"><a href="{{ page.previous.url | prepend:site.baseurl }}">{{ page.previous.title }}</a></h2>
+          {{ page.previous.excerpt | markdownify }}
         </div>
-      </div>
-    </section>
-
-    {% include footer.html %}
-
-    {% include js.html %}
-
-  </body>
-</html>
-
-<!-- Post Layout End -->
+      {% endif %}
+      {% if page.next %}
+        
+        <div class="col-md-6 post-nav">
+          <h3 class="section-header">
+            Newer
+            {% unless page.previous %}
+              <span class="text-muted"> &middot; </span>
+              <a href="{{ "/archive" | prepend:site.baseurl }}">View Archive ({{ site.posts.size }})</a>
+            {% endunless %}
+          </h3>
+            
+          <h2 class="post-title-link"><a href="{{ page.next.url | prepend:site.baseurl }}">{{ page.next.title }}</a></h2>
+          {{ page.next.excerpt | markdownify }}
+        </div>
+      {% endif %}
+    </div>
+  {% endif %}
+{% endif %}
