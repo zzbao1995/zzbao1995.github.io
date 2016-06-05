@@ -1,56 +1,17 @@
-# Carte Noire
+# Jekyll Modern Blog
 
-A simple Jekyll theme for blogging. Not named after the coffee.
+A Simple, Clean and responsive modern blog for jekyll.
 
-![Homepage](http://i.imgur.com/xlmHArV.png)
+## [Live Demo](http://inded.github.io/Jekyll_modern-blog/)
 
-### Article
-![Article](http://i.imgur.com/8rD8FfC.png)
-
-### Disqus Comments
-![Comments](http://i.imgur.com/TBZHQwF.png)
-
-### Posts grouped by year
-![All Posts](http://i.imgur.com/9bNs2Sc.png)
-
-### JavaScript Search
-![Search](http://i.imgur.com/yQqMeSl.png)
-
-### Menu by mmenu
-![Menu](http://i.imgur.com/SClrNSH.png)
-
-## Contact
-If you wish to contact me regarding this theme please raise an issue on GitHub,
-tweet me [@_jacobtomlinson](http://www.twitter.com/_jacobtomlinson) or email me
-[jacob@jacobtomlinson.co.uk](mailto:jacob@jacobtomlinson.co.uk).
-
-## Contribution
-Pull requests are very welcome.
-
-## Theme
-This jekyll theme has been created from scratch. Ideas and inspiration are taken
-from other places but the code is my own.
-
-## Tools and Libraries
-The following tools and libraries are used in this theme
-
-### JavaScript
- * [jQuery](http://jquery.com/)
- * [MMenu](http://mmenu.frebsite.nl/)
- * [HighlightJS](https://highlightjs.org/)
- * [Simple Jekyll Search](https://github.com/christian-fei/Simple-Jekyll-Search)
-
-### CSS
- * [Bootstrap](http://getbootstrap.com/)
- * [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
-
-### Social
- * [AddThis](http://www.addthis.com/)
- * [Disqus](https://disqus.com/)
-
-### Other
- * [Real Favicon Generator](http://realfavicongenerator.net/)
- * [Google Analytics](http://www.google.com/analytics/)
+## Attributions
+Based off of this [article from Codrops](http://tympanus.net/codrops/?p=24222)
+Using Sample images from [Fancy Crave](http://fancycrave.com/)
 
 ## License
-The jekyll theme, HTML, CSS and JavaScript is licensed under GPLv3 (unless stated otherwise in the file).
+
+Based off of this [Article on Codrops](http://tympanus.net/codrops/?p=24222)
+
+Created by Claudio Calautti for Codrops. Released under the [GNU GPL license v3](https://www.gnu.org/licenses/gpl-3.0.html).
+
+Changes being that I made it jekyll ready and smushed the CSS together.
