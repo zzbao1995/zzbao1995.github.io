@@ -1,10 +1,10 @@
 ---
-title:  "Absense of light"
+title:  "夜晚下的学院路灯"
 subtitle: "Only lights from space"
-author: "Wferr"
+author: "Jeffery"
 avatar: "img/authors/wferr.png"
 image: "img/d.jpg"
-date:   2015-04-23 12:12:12
+date:   2016-06-05 12:12:12
 ---
 
 ### Dolor sit amet?
