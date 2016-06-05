@@ -1,10 +1,10 @@
 ---
-title:  "A Craftsman Workshop"
-subtitle: "It's always a bit messy"
-author: "Wferr"
+title:  "Enjoy Your Life"
+subtitle: "There are always wonderful things to be found"
+author: "Jeffery"
 avatar: "img/authors/wferr.png"
 image: "img/f.jpg"
-date:   2015-04-25 12:12:12
+date:   2016-06-05 12:12:12
 ---
 
 ### Dolor sit amet?
