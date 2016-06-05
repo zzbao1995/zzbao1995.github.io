@@ -1,45 +1,30 @@
-# Autm-rb
+Agency Jekyll theme
+====================
 
-Another theme for jekyll.
-based on shiori and midnight
+Agency theme based on [Agency bootstrap theme ](http://startbootstrap.com/templates/agency/)
 
-##[DEMO][demo]
+# How to use
 
-- DISQUS comments
-- google analitics
-- pagination
-- tags
-- codehighlighting
-- bootstrap components
-- font awesome
+###Portfolio 
 
-#### Contribution
-Pull Requests always welcome.
+Portfolio projects are in '/_posts'
 
-## Screens
+Images are in '/img/portfolio'
 
-![](screenshots/home.png)
-![](screenshots/post.png)
+###About
 
-## Installation
+Images are in '/img/about/'
 
-- [Fork this repository][fork]
-- Clone it: `git clone https://github.com/YOUR-USER/autm-rb`
-- Install the [GitHub Pages gem][pages] (includes Jekyll): `bundle install`
-- Run the jekyll server: `jekyll serve` or `bundle exec jekyll serve`
+###Team
 
-## Customization
+Team members and info are in '_config.yml'
 
-Edit this files before using
+Images are in '/img/team/'
 
-- _config.yml
-- /index.html - update default image and email
-- _includes/title.html - main title
 
-## Licensing
+# Demo
 
-[MIT](https://github.com/railsr/autm-rb/blob/master/LICENSE)
+View this jekyll theme in action [here](https://y7kim.github.io/agency-jekyll-theme)
 
-[pages]: http://pages.github.com
-[fork]: https://github.com/railsr/autm-rb/fork
-[demo]: http://railsr.github.io/autm-rb/
+=========
+For more details, read [documentation](http://jekyllrb.com/)

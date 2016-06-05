@@ -1,15 +1,25 @@
-<footer>
-<hr/>
-  <div class="left">  
-    &copy;{{ site.time | date:"%Y" }}.
-    Built with <a href="http://jekyllrb.com/">Jekyll</a> and
-    <a href="https://github.com/railsr/autm-rb">Autm-rb</a>
-  </div>
-
-  <div class="right">
-    {% unless site.twitter == "" %}
-      <a href="{{site.twitter}}"><i class="fa fa-twitter fa-lg" style="color:#49B1F7;"></i></a>
-    </a>
-    {% endunless %}
-  </div>
-</footer>
+  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; {{ site.title }} 2014</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        {% for network in site.social %}
+                        <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
